@@ -36,10 +36,12 @@ const App = () => {
 
   }, [minutes, seconds])
   
-  return(<>
-  {minutes.toString().padStart(2, '0')}:
-  {seconds.toString().padStart(2, '0')}
-  </>)
+  return(<div className='container'>
+
+    {minutes.toString().padStart(2, '0')}:
+    {seconds.toString().padStart(2, '0')}
+
+  </div>)
 };
 
 export default App;
